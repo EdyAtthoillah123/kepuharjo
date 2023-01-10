@@ -24,4 +24,4 @@
 
  // menutup koneksi  
  $conn = null;  
- ?>  
+ ?> 
