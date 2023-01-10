@@ -1,15 +1,15 @@
 <?php
- $dbHost = "localhost";  
- $dbUser = "kepuharjo";  
- $dbPass = "";  
- $dbName = "root"; 
+  $dbHost = "localhost";  
+  $dbUser = "root";  
+  $dbPass = "";  
+  $dbName = "kepuharjo";  
   $conn = new PDO("mysql:host=$dbHost;dbname=$dbName", $dbUser, $dbPass);  
  
   try {  
    // set the PDO error mode untuk exception  
    $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);  
    //menentukan id record yang akan diupdate  
-   echo $_GET['kode'];
+    echo $_GET['kode'];
    //membuat query mengupdate record pada tabel User    
    $query="UPDATE domisili SET status_surat='Disetujui RT' WHERE id_surat='$_GET[kode]'";   
    // Membuat prepare statement  

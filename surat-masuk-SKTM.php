@@ -77,7 +77,7 @@ endif;
     $obj = new updatekelurahan;
     if ($_SERVER['REQUEST_METHOD'] == 'POST') :
         $id = $_POST['idsurat'];
-        $idsp = 'Selesai';
+        $idsp = 'Diproses Kelurahan';
         
         if ($obj->idkelsktm($idsp, $id)) :
     
