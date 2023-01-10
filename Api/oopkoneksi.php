@@ -1,9 +1,9 @@
 <?php
 class koneksii{
     private $host = "localhost";
-    private $user = "wstifai3_suket-kel";
-    private $db="wstifai3_suket-kel";
-    private $pass="Polije1234";
+    private $user = "root";
+    private $db="Kepuharjo";
+    private $pass="";
     protected $koneksi;
 
     public function __construct()
